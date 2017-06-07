@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <style>
+        *{margin:0;padding:0;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+        html,body{height:100%;width:100%;}
+        body{padding-bottom:30px;}
+        #header{width:100%;overflow:scroll;margin:2rem 0.5rem 0;}
+        #connect{position:relative;margin-top:2rem;}
+        #connect .connectList{position:absolute;word-wrap:break-word;border:0.15rem solid #ccc;border-radius:1rem;z-index: 1;overflow-y:auto;}
+        #connect .connectContentBox{position:absolute;top:0;left:0;overflow:hidden;height:100%;width:100%;border-radius:0.9rem;background:url("../image/banhai_image.png") no-repeat;background-size:100% 100%}
+        #connect .connectList.acBorder{border:0.15rem solid #09f;}
+        #connect .ac:after{content: "";display:inline-block;width:100%;height:100%;background:#000;z-index: 11;opacity:0.3;filter: alpha(opacity=30);position:absolute;top:0;left:0;}
+        #connect .line{position:absolute;border:0.08rem solid #09f;border-radius:0.7rem;}
+        #connect .lineAc:after{content: "";display:inline-block;width:100%;height:100%;background:#000;z-index: 11;opacity:0.3;filter: alpha(opacity=30);position:absolute;top:0;left:0;}
+        #connect .line.answerError{border:1px solid red;}
+        #connect .line.answerRight{border:1px solid #2cc8a0;}
+        #connect .answerError{border:2px solid red;}
+        #connect .answerRight{border:2px solid #2cc8a0;}
+    </style>
+</head>
+<body>
+<div id="header"></div>
+<div id="connect"></div>
+<script src="../build/js/connect.min.js"></script>
+</body>
+</html>
