@@ -65,7 +65,6 @@ function addContent(ele, content) {
     ele.appendChild(contentDOM);
 
   } else {
-    // alert(typeof content);
     // 没有图片,纯文本
 
     // 防止编辑出现多标签现象
