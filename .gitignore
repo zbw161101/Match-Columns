@@ -1,6 +1,0 @@
-.git/
-.DS_Store
-node_modules/
-build/
-dist/
-npm-debug.log
